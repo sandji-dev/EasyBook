@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Nos Voyages - EasyBook</title>
+</head>
+
+<body>
+    <header class="en-tête">
+        <img src="images/logoeasybook.png" alt="logo du site">
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="voyages.html">Voyages</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="reservation.html">reservation</a></li>
+                <li><a href="activités.html">Activités</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="voyages">
+        <h1>Nos destinations</h1>
+        <p>Explorez une selection de voyages organisés pour vous emmener partout dans le monde. !</p>
+        <div class="voyages-grid">
+            <div class="voyage-card">
+                <img src="images/berlin.jpeg" alt="Berlin">
+                <h3><strong>Berlin</strong></h3>
+                <p>decouvrez berlin et sa beauté a prix abordable<br>prix:à partir de 60€</p>
+                <a href="reservation.html" class="btn-voyage">reserver</a>
+            </div>
+            <div class="voyage-card">
+                <img src="images/yaounde.jpeg" alt="yaounde">
+                <h3><strong>Yaounde</strong></h3>
+                <p>Allez decouvrir Yaounde : ville au sept collines<br>prix:à partir de 230€</p>
+                <a href="reservation.html" class="btn-voyage">reserver</a>
+            </div>
+            <div class="voyage-card">
+                <img src="images/rome.jpeg" alt="Rome">
+                <h3><strong>Rome</strong></h3>
+                <p>Plongez dans l histoire Romaine<br>prix:à partir de 80€</p>
+                <a href="reservation.html" class="btn-voyage">reserver</a>
+            </div>
+            <div class="voyage-card">
+                <img src="images/lisbonne.jpeg" alt="lisbonne">
+                <h3><strong>lisbonne</strong></h3>
+                <p>Profitez du soleil du Portugal<br>prix:à partir de 50€</p>
+                <a href="reservation.html" class="btn-voyage">reserver</a>
+            </div>
+            <div class="voyage-card">
+                <img src="images/caire.jpeg" alt="Le caire">
+                <h3><strong>La Caire</strong></h3>
+                <p>Admirez l Egypte et ses Pyramides<br>prix:à partir de 180€</p>
+                <a href="reservation.html" class="btn-voyage">reserver</a>
+            </div>
+            <div class="voyage-card">
+                <img src="images/abidjan.jpeg" alt="abidjan">
+                <h3><strong>Abidjan</strong></h3>
+                <p>Que dire de la joie de vivre ivoirienne<br>prix:à partir de 220€</p>
+                <a href="reservation.html" class="btn-voyage">reserver</a>
+            </div>
+            <div class="voyage-card">
+                <img src="images/londres.jpeg" alt="New-york">
+                <h3><strong>Londres</strong></h3>
+                <p>Decouvrez Londres et son Big-Bang<br>prix:à partir de 90€</p>
+                <a href="reservation.html" class="btn-voyage">reserver</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoeasybook.png" alt="Logo EasyBook">
+                <p>EasyBook — Explorez le monde facilement</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Voyages</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email : contact@easybook.com</p>
+                <p>Tél : +393518397559</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EasyBook. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navList = document.querySelector(".navbar ul");
+
+        menuToggle.addEventListener("click", () => {
+            navList.classList.toggle("active");
+        });
+    </script>
+
+
+</body>
+
+</html>

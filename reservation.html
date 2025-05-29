@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Réservation - EasyBook</title>
+</head>
+
+<body>
+    <header class="en-tête">
+        <img src="images/logoeasybook.png" alt="logo du site">
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="voyages.html">Voyages</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="reservation.html">reservation</a></li>
+                <li><a href="activités.html">Activités</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="reservation">
+        <h1>Formulaire de Réservation</h1>
+        <form class="reservation-form">
+            <label for="name">nom complet</label>
+            <input type="text" id="name" placeholder="votre nom complet" required>
+
+            <label for="email">votre adresse email</label>
+            <input type="email" id="email" placeholder="votre email" required>
+
+            <label for="phone">votre numero mobile</label>
+            <input type="phone" id="phone" placeholder="entrez votre numero" required>
+
+            <label for="destination">Destination</label>
+            <select id="destination" required>
+                <option value="">--choisissez votre destination</option>
+                <option value="rome">Rome</option>
+                <option value="londres">Londres</option>
+                <option value="berlin">Berlin</option>
+                <option value="yaounde">Yaounde</option>
+                <option value="lisbonne">lisbonne</option>
+                <option value="abidjan">Abidjan</option>
+                <option value="le caire">Le caire</option>
+                <option value="bagangte">Bagangte cmr</option>
+                <option value="New-york">New-york</option>
+                <option value="paris">Paris</option>
+                <option value="brussel">Brussel</option>
+            </select>
+
+            <label for="date">Date de depart</label>
+            <input type="date" id="date" required>
+
+            <label for="message">message (facultatif)</label>
+            <textarea id="message" rows="4" placeholder="des informations complémentaires ?"></textarea>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoeasybook.png" alt="Logo EasyBook">
+                <p>EasyBook — Explorez le monde facilement</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Voyages</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email : contact@easybook.com</p>
+                <p>Tél : +393518397559</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EasyBook. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navList = document.querySelector(".navbar ul");
+
+        menuToggle.addEventListener("click", () => {
+            navList.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>

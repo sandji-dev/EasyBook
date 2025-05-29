@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EasyBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="en-tête">
+        <img src="images/logoeasybook.png" alt="logo du site">
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="voyages.html">Voyages</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="reservation.html">reservation</a></li>
+                <li><a href="activités.html">Activités</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="contact">
+        <h1>Contactez-nous</h1>
+        <p>Une question, un besoin spécifique ou une remarque ? Nous sommes là pour vous aider !</p>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nom">nom complet</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="objet">Objet</label>
+                <input type="text" id="objet" name="objet" placeholder="ex: Réclamation, info, suggestion...">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-card">Envoyer le message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoeasybook.png" alt="Logo EasyBook">
+                <p>EasyBook — Explorez le monde facilement</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="voyages.html">Voyages</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="activités.html">Activités</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email : contact@easybook.com</p>
+                <p>Tél : +393518397559</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EasyBook. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navList = document.querySelector(".navbar ul");
+
+        menuToggle.addEventListener("click", () => {
+            navList.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
